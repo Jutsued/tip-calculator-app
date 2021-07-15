@@ -1,20 +1,24 @@
-const bill = document.querySelector('.bills');
+const billForm = document.getElementById('bill-divider');
 
-bill.addEventListener('click', () => {
-    const numPpl = document.getElementById('numPeople');
-    const tipAll = document.querySelectorAll('.tipsy')
-    const tip_5 = document.getElementById('tip-5');
-    const tip_10 = document.getElementById('tip-5');
-    const tip_15 = document.getElementById('tip-5');
-    const tip_25 = document.getElementById('tip-5');
-    const tip_50 = document.getElementById('tip-5');
 
-    console.log(25);
+const tipAll = document.querySelectorAll('.tipsy').value;
+const tip_5 = document.getElementById('tip-5').value;
+const tip_10 = document.getElementById('tip-5').value;
+const tip_15 = document.getElementById('tip-5').value;
+const tip_25 = document.getElementById('tip-5').value;
+const total = document.getElementById('btn').value;
 
-    tipAll.forEach ( (e) => {
-        console.log(e)
-    })
-})
 
-console.log(25);
-console.log("25");
+billForm.addEventListener('input', billHandler);
+
+function billHandler (e) {
+    e.preventDefault();
+    console.log(e)
+
+    const digits = getDigits();
+}
+
+function getDigits () {
+    const bill = document.querySelector(".bills").value;
+    const numPpl = document.querySelector('.numPeople').value;
+}
