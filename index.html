@@ -6,6 +6,7 @@
   <script src="./script.js" defer></script>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./style.css" type="text/css">
+  <link rel="stylesheet" href="./query.css" type="text/css">
   <title>Frontend Mentor | Tip calculator app</title>
 
 </head>
@@ -17,11 +18,11 @@
   <div class="container">
     
     <div class="calculator-container">
-      <form action="submit" id="bill-divider">
+
       <div class="bill">
-        <div class="raw-bill">
+        <div class="raw-bill"> 
         <p>Bill</p>
-         <input type="number" class="bills" placeholder="$                                    0">
+         <input type="number" min="1" class="bills" placeholder="$                                    0">
         </div>
     
       <div class="tip">
@@ -30,18 +31,24 @@
           <p>Select Tip %<p>
         </div>
         <div class="tip-amount">
-          <button id="tip-5" class="tipsy">5%</button>
-          <button id="tip-10" class="tipsy">10%</button>
-          <button id="tip-15" class="tipsy">15%</button>
-          <button id="tip-25" class="tipsy">25%</button>
-          <button id="tip-50" class="tipsy">50%</button>
-          <button id="selected">Custom</button>
+          <input class="form-check-input" type="radio" id="5%" value="5" name="tip-percentage">
+          <label for="5%">5%</label>
+          <input class="form-check-input" type="radio" id="10%" value="10" name="tip-percentage">
+          <label for="10%">10%</label>
+          <input class="form-check-input" type="radio" id="15%" value="15" name="tip-percentage">
+          <label for="15%">15%</label>
+          <input class="form-check-input" type="radio" id="25%" value="25" name="tip-percentage">
+          <label for="25%">25%</label>
+          <input class="form-check-input" type="radio" id="50%" value="50" name="tip-percentage">
+          <label for="50%">50%</label>
+          <input class="form-check-input" type="number" id="custom-percent" min="0" placeholder="Custom">
       </div>
 
       </div>
 
       <div class="people">
         <p>Number of People</p>
+        <span class="red-alert">Can not be zero</span>
          <input type="number" class="numPeople" placeholder="$                                    0">
       </div>
     </div>
@@ -50,7 +57,7 @@
 
           <div class="amount">
             <p>Tip Amount<br> <a>/ person</a></p>
-            <span >$0.00</span>
+            <span id="insertA">$0.00</span>
           </div>
 
           <div class="total">
@@ -59,11 +66,10 @@
           </div>
 
           <div class="reset">
-            <button>Reset</button>
+            <button id="reset-n">Reset</button>
           </div>
 
         </div>
-      </form>
     </div>
   
   </div>
