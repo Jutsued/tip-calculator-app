@@ -128,6 +128,15 @@ input.bills {
     cursor: pointer;
 }
 
+input:hover {
+    color: #00494d;
+    outline: 3px solid #95eadf;
+}
+
+label:hover {
+    background-color:#95eadf;
+}
+
 .tip-amount input[type="radio"] {
     display: none;
 }
@@ -257,13 +266,15 @@ button.active {
     background-color: #95eadf;
 }
 
+.reset button:hover {
+    outline: 2px solid #95eadf;
+}
 .attribution { 
-    font-size: 11px; 
-    text-align: center;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 2%; 
+    position:fixed;
+    bottom:0px;
+    width:100%;
+    text-align: center; 
+    left: 0px;
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
