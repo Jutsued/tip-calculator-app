@@ -4,8 +4,8 @@
 
 ### Screenshot
 
-![](./webcapture/full.jpg)
-![](./webcapture/mobile.jpg)
+![](./webcapture/full.jpeg)
+![](./webcapture/mobile.jpeg)
 
 ### Links
 
