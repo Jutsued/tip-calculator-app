@@ -269,14 +269,44 @@ button.active {
 .reset button:hover {
     outline: 2px solid #95eadf;
 }
-.attribution { 
-    position:fixed;
-    bottom:0px;
-    width:100%;
-    text-align: center; 
-    left: 0px;
-}
-.attribution a { 
-    color: hsl(228, 45%, 44%); 
 
+.footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: hsl(183, 100%, 15%);
+    height: 7vh;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.logos {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.logos img {
+    width: 20px;
+    height: 20px;
+    filter: #2C7566;
+    margin: 0 50px;
+}
+
+svg {
+    margin: 0 43px;
+}
+svg:hover {
+    filter: brightness(100);
+}
+
+.logos img:hover {
+    filter: brightness(100);
+}
+
+.footer span:hover {
+    color: rgb(39, 189, 39);
 }

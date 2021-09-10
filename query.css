@@ -72,4 +72,9 @@
     .attribution {
         font-size: 10px;
     }
+
+    .footer {
+        position: relative;
+        bottom: -1073px;
+    }
 }
